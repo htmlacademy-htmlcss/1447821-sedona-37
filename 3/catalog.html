@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Седона</title>
-    <link rel="stylesheet" href="style\style.css">
-    <link rel="stylesheet" href="portfolio-outline.css">
     <base href="https://htmlacademy-htmlcss.github.io/1447821-sedona-37/3/">
 </head>
     <body>
@@ -122,13 +120,15 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="image/catalog/hotel-1.jpg" width="300" height="212" alt="Одно из самых удивительных мест на земле">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
+                </a>
                 <span class="Hotel">Гостиница</span>
                 <span class="Hotel">От 4000 ₽</span>
                 <a class="Moredetailed" href="#">Подробнее</a>
                 <a class="favorites" href="#">В избранное</a>
-                <span class="four-stars visually-hidden">Звёзды</span>
+                <div class="four-stars" role="img" aria-label="4 Звезды">
+                <span class="visually-hidden">4 Звезды</span>
+                </div>
                 <span class="rating">рейтинг 8,5</span>
-              </a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -139,7 +139,9 @@
               <span class="Hotel">От 5000 ₽</span>
               <a class="Moredetailed" href="#">Подробнее</a>
               <a class="favori" href="#">В избранное</a>
-              <span class="four-stars visually-hidden">Звёзды</span>
+              <div class="four-stars" role="img" aria-label="4 Звезды">
+              <span class=" visually-hidden">4 Звезды</span>
+              </div>
               <span class="rating">рейтинг 9,2</span>
             </li>
             <li class="product-card">
@@ -151,7 +153,9 @@
               <span class="Hotel">От 2500 ₽</span>
               <a class="Moredetailed" href="#">Подробнее</a>
               <a class="favorites" href="#">В избранное</a>
-              <span class="three-stars visually-hidden">Звёзды</span>
+              <div class="three-stars" role="img" aria-label="3 Звезды">
+              <span class="visually-hidden">3 Звезды</span>
+              </div>
               <span class="rating">рейтинг 6,9</span>
             </li>
             <li class="product-card">
@@ -163,7 +167,9 @@
               <span class="Hotel">От 1500 ₽</span>
               <a class="Moredetailed" href="#">Подробнее</a>
               <a class="favorites" href="#">В избранное</a>
-              <span class="stars-two visually-hidden">Звёзды</span>
+              <div class="stars-two" role="img" aria-label="2 Звезды">
+              <span class="visually-hidden">2 Звезды</span>
+              </div>
               <span class="rating">рейтинг 6,9</span>
             </li>
           </ul>
@@ -174,22 +180,23 @@
       <footer class="page-footer">
         <ul class="social-media">
           <li>
-            <a href="https://vk.com/">
-              <img class="vk" src="image\vk.svg" width="24" height="14" alt="Вконтакте">
-            </li>
-            <li>
-              <a href="https://web.telegram.org/">
-                <img class="telegram" src="image\telegram.svg" width="18" height="15.1" alt="Телеграм">
+            <a href="https://vk.com/htmlacademy">
+              <img class="vk" src="#" width="24" height="14" alt="Вконтакте">
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/">
-                <img class="youtube" src="image\youtube.svg" width="22" height="17" alt="Ютюб">
+              <a href="https://t.me/htmlacademy">
+                <img class="telegram" src="#" width="18" height="15" alt="Телеграм">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/user/htmlacademyru">
+                <img class="youtube" src="#" width="22" height="17" alt="Ютюб">
               </a>
             </li>
           </ul>
               <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-              <img src="image\footer\HTML-Academy.svg">
+              <img src="#" alt="HTML-Academy">
       </footer>
     </body>
 </html>
