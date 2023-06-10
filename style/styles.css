@@ -19,6 +19,7 @@ body{
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 }
 
 .button{
@@ -30,7 +31,6 @@ text-transform: uppercase;
 text-decoration: none;
 font-weight: 700;
 border-radius: 4px;
-cursor: pointer;
 }
 
 ul{
