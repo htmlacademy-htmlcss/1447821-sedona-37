@@ -9,7 +9,7 @@
       <header class="page-header">
         <nav class="navigation">
           <a class="logo" href="index.html">
-        <img src="image/header/logo.svg" width="140" height="70" alt="Главная" >
+        <img src="image/header/logo.svg" width="140" height="70" alt="Логотип города Седона" >
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -29,29 +29,32 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="#">12
                 <span class="visually-hidden">Добавить в избранное</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="button navigation-link" href="#">Хочу сюда</a>
-            </li>
           </ul>
+            <a class="button navigation-link" href="#">Хочу сюда!</a>
         </nav>
       </header>
+
       <main class="main-inner">
-        <section class="inner-section">
+        <header class="inner-header">
           <h1 class="inner-section-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
+          <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
-          </ul>
+          </ol>
+        </header>
+
+        <section class="inner-section">
+          <h2 class="visually-hidden">Форма каталога</h2>
           <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="checkboxes">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -94,21 +97,23 @@
               <button class="apply-button" type="submit">Применить</button>
               <button class="button-apply" type="reset">Сбросить</button>
             </form>
-          </section>
-        <section class="sorting">
-          <h2 class="Hotels-found">Найдено гостиниц:38</h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала дешевые</option>
-          </select>
-          <a class="button button-light" href="#" >
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать избранное</span>
-          </a>
-          <a class="button-cards" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+        </section>
+        <section>
+          <div class="sorting">
+            <h2 class="Hotels-found">Найдено гостиниц: <span class="thirty-eight">38</span></h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Сначала дешевые</option>
+            </select>
+            <a class="button button-light" href="#" >
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button" href="#">
+              <span class="visually-hidden">Показать избранное</span>
+            </a>
+            <a class="button-cards" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </div>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -167,6 +172,29 @@
               <p class="product-card-rating">рейтинг: <span class="rating">6,9</span></p>
             </li>
           </ul>
+
+          <!-- Пагинация -->
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">следующая страница</span>
+              </a>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
         </section>
       </main>
       <footer class="page-footer">
@@ -188,7 +216,9 @@
           </li>
         </ul>
         <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <img src="image/footer/HTMLAcademy.jpg" height="32" width="114" alt="HTML-Academy">
+        <a class="contacts-logo" href="https://htmlacademy.ru/">
+          <img src="image/footer/html-academy.svg" height="32" width="114" alt="Логотип HTML-Academy">
+        </a>
     </footer>
     </body>
 </html>
