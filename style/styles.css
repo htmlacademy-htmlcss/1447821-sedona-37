@@ -19,6 +19,9 @@ body{
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+  height: 100%;
+  background-color: #F2F2F2;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -33,17 +36,18 @@ body{
 }
 
 .button{
-color: #FFFFFF;
-background-color: #756157;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-text-decoration: none;
-font-weight: 700;
-border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
 }
 
-ul{
+ul,
+ol{
   list-style-type: none;
   padding: 0;
 }
@@ -63,23 +67,10 @@ ul{
   background-image: url("../image/main/index-background.jpg");
   width: 1200px;
   height: 485px;
-  background-position: center;
   background-size: cover;
-  position: relative;
-}
-
-.picture:first-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.secondblock:last-child {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
 }
 
 .interested{
@@ -112,15 +103,18 @@ ul{
   }
 
 .advantages-text{
+  display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
 .advantages-color{
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .item-advantages{
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -155,11 +149,13 @@ line-height: 26px;
 color: #FFFFFF;
 }
 .subscribe-form input{
+  font-family: "PT Sans", sans-serif;
   width: 452px;
   height: 52px;
 }
 
 .newsletter-button{
+  font-family: "PT Sans", sans-serif;
   width: 232px;
   height: 52px;
   text-transform: uppercase;
@@ -290,4 +286,56 @@ color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   color:#333333;
+}
+
+/* сетки */
+.page-container{
+  display: flex;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
+}
+.main-container{
+  flex-grow: 1;
+}
+.logo{
+  width: 138px;
+  padding-right: 30px ;
+}
+.navigation{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+.navigation-list{
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user{
+  width: 300px;
+  margin-left: auto;
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.services-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
