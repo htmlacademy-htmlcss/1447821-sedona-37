@@ -44,6 +44,7 @@ body{
   text-decoration: none;
   font-weight: 700;
   border-radius: 4px;
+  padding: 8px 50px;
 }
 
 ul,
@@ -64,13 +65,19 @@ ol{
 
 /* main */
 .picture-with-logo{
-  background-image: url("../image/main/index-background.jpg");
-  width: 1200px;
+  background-image: url("../image/main/white-stripe.svg"),url("../image/main/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
+  background-color: #82B3D3;
   height: 485px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  text-align: center;
+}
+
+.picture{
+  padding: 51px 371px 364px ;
+}
+
+.block-1{
+  background-image: url("../image/main/white-stripe.svg") no-repeat;
 }
 
 .interested{
@@ -111,9 +118,11 @@ ol{
 .advantages-color{
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+  height: 385px;
 }
 
 .item-advantages{
+  height: 385px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -132,12 +141,12 @@ ol{
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+  padding: 8px 50px;
 }
 
 .insert-from{
   background-image: url("../image/main/picture-background.jpg");
-  width: 1200px;
-  height: 414px;
+  background-color: #7DB54F;
   background-size: cover;
   position: relative;
   color: #FFFFFF;
@@ -151,18 +160,25 @@ color: #FFFFFF;
 .subscribe-form input{
   font-family: "PT Sans", sans-serif;
   width: 452px;
-  height: 52px;
+  border-radius: 4px 0px 0px 4px;
+  padding: 12px 20px;
+  border: none;
+}
+
+.subscribe-form{
+  display: flex;
+  justify-content: center;
 }
 
 .newsletter-button{
   font-family: "PT Sans", sans-serif;
-  width: 232px;
-  height: 52px;
+  font-weight: 700;
   text-transform: uppercase;
   background-color: #82B3D3;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  padding:  8px 50px;
 }
 
 /* footer */
@@ -172,6 +188,7 @@ color: #FFFFFF;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+  padding: 5px 194px 5px 195px;
 }
 
 /* catalog */
@@ -333,9 +350,66 @@ color: #FFFFFF;
 }
 
 .page-footer{
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  justify-content: space-between;
+  height: 120px;
   align-items: center;
+}
+
+.promo-header-container{
+  padding: 64px 0px;
+  justify-content: center;
+}
+
+.interested-consider{
+  display: flex-grow;
+  padding: 69px 0px;
+  justify-content: center;
+}
+
+.advantages-item-text{
+  padding: 103px 85px;
+}
+
+.services-item{
+  width: 400px;
+  height: 385px;
+}
+
+.title-text{
+  padding: 80px 85px;
+}
+
+.interested-consider-button{
+  padding: 96px 304px;
+}
+
+.services-button{
+  height: 406px;
+}
+
+.insert-div{
+  padding: 96px 258px 104px 258px;
+}
+
+.contacts-social-list{
+  display: flex;
+  justify-content: center;
+  width: 142px;
+  height: 40px;
+}
+
+.footer-div{
+  display: flex;
+  height: 50px;
+  padding: 40px 70px 30px 70px;
+  justify-content: space-between;
+}
+
+.social-item-link{
+  padding: 1px 10px;
+}
+
+.contacts-logo{
+  height: 33px;
+  width: 115px;
+  padding: 0px 0.1px 0.1px 0px;
 }
