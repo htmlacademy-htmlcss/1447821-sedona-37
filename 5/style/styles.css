@@ -44,6 +44,7 @@ body{
   font-weight: 700;
   border-radius: 4px;
   padding: 8px 50px;
+  display: block;
 }
 
 ul,
@@ -68,12 +69,11 @@ ol{
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   background-color: #82B3D3;
-  height: 485px;
-  background-size: cover;
-}
-
-.picture{
-  padding: 51px 371px 364px ;
+  min-height: 485px;
+  box-sizing: border-box;
+  background-size: auto, cover;
+  text-align: center;
+  padding: 51px 371px 25px;
 }
 
 .block-1{
@@ -87,6 +87,7 @@ ol{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .vis{
@@ -96,6 +97,7 @@ ol{
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .consider{
@@ -143,19 +145,13 @@ ol{
   padding-top: 30px;
 }
 
-
-.newsletter-button{
-  font-weight: 700;
-  color: #FFFFFF;
-  line-height: 36px;
-  font-size: 20px;
-}
-
 .button-all{
+  display: inline-flex;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
   padding: 8px 50px;
+  margin-top: 54px;
 }
 
 .insert-from{
@@ -164,6 +160,8 @@ ol{
   background-size: cover;
   position: relative;
   color: #FFFFFF;
+  padding: 96px 258px 104px 258px;
+  text-align: center;
 }
 
 .insert-fro{
@@ -185,9 +183,11 @@ ol{
   padding: 12px 20px;
   border: none;
   margin: 0;
+  font-size: 18px;
 }
 
 .subscribe-form{
+  margin-top: 54px;
   display: flex;
   justify-content: center;
 }
@@ -201,6 +201,9 @@ ol{
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   padding:  8px 50px;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /* footer */
@@ -405,11 +408,12 @@ ol{
   align-items: center;
   margin: 0;
   padding: 0;
+  max-width: 450px;
+  flex-wrap: wrap;
 }
 
 .navigation-user{
   gap: 20px;
-  height: 64px;
   width: 268px;
   margin-left: auto;
 }
@@ -428,19 +432,21 @@ ol{
 }
 
 .page-footer{
-  height: 120px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  padding: 40px 70px 30px 70px;
   align-items: center;
 }
 
+
 .promo-header-container{
-  padding: 64px 0px;
+  padding: 70px 70px;
   text-align: center;
 }
 
 .interested-consider{
-  display: flex-grow;
-  padding: 69px 0px;
-  justify-content: center;
+  padding: 70px 70px;
   text-align: center;
 }
 
@@ -459,38 +465,19 @@ ol{
   text-align: center;
 }
 
-.interested-consider-button{
-  padding: 96px 304px;
-  text-align: center;
-}
-
 .services-button{
-  height: 406px;
-}
-
-.insert-div{
-  padding: 96px 258px 104px 258px;
+  padding: 96px 304px;
   text-align: center;
 }
 
 .contacts-social-list{
   display: flex;
-  justify-content: center;
-  width: 142px;
-  height: 40px;
-  align-items: center;
+  flex-wrap: wrap;;
+  margin: 0;
 }
 
-.footer-div{
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
-  padding: 40px 70px 30px 70px;
-  align-items: center;
-}
-
-.social-item-link{
-  padding: 1px 10px;
+.social-item{
+  padding: 0px 10px;
 }
 
 .contacts-logo{
@@ -514,7 +501,6 @@ ol{
 
 .interes{
   padding-bottom: 20px;
-  width: 505px;
   margin: 0 auto;
 }
 
@@ -563,4 +549,28 @@ ol{
 
 .product-card{
   width: 340px
+}
+
+.social-link-vkontakte{
+  background-image: url(../image/footer/vkontakte.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 13px 12px;
+  display: block;
+}
+
+.social-link-telegram{
+  background-image: url(../image/footer/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 13px 12px;
+  display: block;
+}
+
+.social-link-youtube{
+  background-image: url(../image/footer/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 13px 12px;
+  display: block;
 }
