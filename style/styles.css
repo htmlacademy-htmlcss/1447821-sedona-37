@@ -489,10 +489,7 @@ ol{
 .sorting{
   display: flex;
   justify-content: space-between;
-  width: 1060px;
-  height: 49px;
-  padding-left: 70px;
-  padding-top: 50px;
+  box-sizing: border-box;
 }
 
 .navigation-item-link{
@@ -573,4 +570,35 @@ ol{
   background-position: center;
   padding: 13px 12px;
   display: block;
+}
+
+.four-stars{
+
+}
+
+.pagination{
+  display: flex;
+}
+
+.hotel-sorting{
+  padding: 50px 70px 60px 70px;
+}
+
+.pagination-item{
+  background-color: #82B3D3;
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.pagination-current{
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-prev{
+  background-color: #FFFFFF;
 }
