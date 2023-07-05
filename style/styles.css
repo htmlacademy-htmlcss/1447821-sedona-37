@@ -51,6 +51,7 @@ ul,
 ol{
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 /* header */
@@ -116,22 +117,39 @@ ol{
   padding-bottom: 30px;
   }
 
+.item-text{
+  flex-direction: row-reverse;
+}
+
+
 .advantages-text{
   display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
+  box-sizing: border-box;
 }
 
 .advantages-color{
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  box-sizing: border-box;
+  padding: 103px 85px;
+  text-align: center;
+}
+
+.advantages-item-text{
+  padding: 103px 85px;
+  text-align: center;
 }
 
 .item-advantages{
-  height: 385px;
+  box-sizing: border-box;
+  min-height: 385px;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 103px 85px;
+  text-align: center;
 }
 
 .advantages-description-text{
@@ -406,8 +424,6 @@ ol{
 .navigation-list{
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
   max-width: 450px;
   flex-wrap: wrap;
 }
@@ -421,8 +437,6 @@ ol{
 .advantages-list{
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .services-list{
@@ -450,14 +464,12 @@ ol{
   text-align: center;
 }
 
-.advantages-item-text{
-  padding: 103px 85px;
-  text-align: center;
-}
-
 .services-item{
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  box-sizing: border-box;
+  padding: 103px 85px;
+  text-align: center;
 }
 
 .title-text{
@@ -543,8 +555,15 @@ ol{
   margin: 0;
 }
 
+.product-card:nth-child(3n){
+  margin-right: 0;
+}
+
 .product-card{
-  width: 340px
+  margin-right: 20px;
+  padding: 20px;
+  height: 438px;
+  max-width: 340px
 }
 
 .social-link-vkontakte{
@@ -600,4 +619,12 @@ ol{
 
 .pagination-prev{
   background-color: #FFFFFF;
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
