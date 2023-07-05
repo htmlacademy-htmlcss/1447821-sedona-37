@@ -489,7 +489,7 @@ ol{
 }
 
 .social-item{
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 .contacts-logo{
@@ -596,20 +596,37 @@ ol{
 
 .pagination{
   display: flex;
+  gap: 8px;
 }
 
 .hotel-sorting{
   padding: 50px 70px 60px 70px;
 }
 
-.pagination-item{
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.pagination-link{
   background-color: #82B3D3;
-  margin-right: 8px;
   border-radius: 4px;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 12px;
+  box-sizing: border-box;
 }
 
 .pagination-current{
@@ -619,12 +636,5 @@ ol{
 
 .pagination-prev{
   background-color: #FFFFFF;
-}
-
-.product-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  color: #000000;
 }
