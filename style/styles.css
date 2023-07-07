@@ -367,6 +367,10 @@ ol{
   color: #333333;
 }
 
+.hotel:nth-child(odd){
+  margin-left: auto;
+}
+
 .moredetailed{
   font-weight: 700;
   font-size: 16px;
@@ -377,7 +381,7 @@ ol{
   border-radius: 4px;
   text-decoration: none;
   padding: 8px 26px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .favorites{
@@ -390,7 +394,7 @@ ol{
   border-radius: 4px;
   text-decoration: none;
   padding: 8px 20px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .favori{
@@ -401,12 +405,13 @@ ol{
 .product-card-rating{
   border-radius: 4px;
   background-color: #F2F2F2;
-  width: 140px;
-  height: 37px;
+  padding: 9px 22px 8px 23px;
   font-size: 16px;
   line-height: 20px;
   color:#333333;
   margin: 0;
+  text-align: center;
+  width: 95px;
 }
 
 /* сетки */
@@ -528,6 +533,7 @@ ol{
 
 .mode-view-item{
   border: 2px solid #E5E5E5;
+  margin-left: 8px;
 }
 
 .mode-cards{
