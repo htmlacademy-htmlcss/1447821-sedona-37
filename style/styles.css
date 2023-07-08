@@ -56,12 +56,14 @@ ol{
 
 /* header */
 .navigation-link:not(.button){
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
   text-transform: capitalize;
+  padding: 20px 16px;
 }
 
 /* main */
@@ -70,11 +72,16 @@ ol{
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   background-color: #82B3D3;
-  min-height: 485px;
+  max-height: 485px;
   box-sizing: border-box;
   background-size: auto, cover;
   text-align: center;
-  padding: 51px 371px 25px;
+  padding: 51px 70px 82px;
+}
+
+.picture{
+  width: 485px;
+  height: 352px;
 }
 
 .block-1{
@@ -106,6 +113,14 @@ ol{
   line-height: 26px;
   color: #333333;
   margin: 0;
+  margin-bottom: 54px;
+}
+
+.services-content{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
 }
 
 .advantages-title{
@@ -115,6 +130,7 @@ ol{
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 30px;
+  margin-bottom: 30px;
   }
 
 .item-text{
@@ -138,16 +154,11 @@ ol{
   text-align: center;
 }
 
-.advantages-item-text{
-  padding: 103px 85px;
-  text-align: center;
+.advantages-color:nth-child(odd){
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.item-advantages{
-  box-sizing: border-box;
-  min-height: 385px;
-  width: 400px;
-  background-color: rgba(131, 179, 211, 0.2);
+.advantages-item-text{
   padding: 103px 85px;
   text-align: center;
 }
@@ -155,12 +166,10 @@ ol{
 .advantages-description-text{
   color: #333333;
   margin: 0;
-  padding-top: 30px;
 }
 
 .advantages-description{
   margin: 0;
-  padding-top: 30px;
 }
 
 .button-all{
@@ -169,7 +178,6 @@ ol{
   line-height: 36px;
   color: #FFFFFF;
   padding: 8px 50px;
-  margin-top: 54px;
 }
 
 .insert-from{
@@ -192,12 +200,13 @@ ol{
   line-height: 26px;
   color: #FFFFFF;
   margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-form input{
   font-family: "PT Sans", sans-serif;
   width: 100%;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   border: none;
   margin: 0;
@@ -205,7 +214,6 @@ ol{
 }
 
 .subscribe-form{
-  margin-top: 54px;
   display: flex;
   justify-content: center;
 }
@@ -279,7 +287,6 @@ ol{
   font-size: 16px;
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 16px;
 }
 
 .control{
@@ -322,6 +329,7 @@ ol{
   font-weight: 700;
   color: #000000;
   margin: 0;
+  margin-right: auto;
 }
 
 .select-control{
@@ -332,10 +340,18 @@ ol{
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 14px 20px;
+  appearance: none;
+  background-image: url(../image/catalog/сheck-mark.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 30px;
+  margin-right: 70px;
 }
 
 .product-card-link{
   text-decoration: none;
+  display: block;
+  grid-column: 1 / -1;
 }
 
 .product-card-title{
@@ -351,6 +367,10 @@ ol{
   color: #333333;
 }
 
+.hotel:nth-child(odd){
+  margin-left: auto;
+}
+
 .moredetailed{
   font-weight: 700;
   font-size: 16px;
@@ -361,6 +381,7 @@ ol{
   border-radius: 4px;
   text-decoration: none;
   padding: 8px 26px;
+  text-align: center;
 }
 
 .favorites{
@@ -372,25 +393,29 @@ ol{
   color: #FFFFFF;
   border-radius: 4px;
   text-decoration: none;
-  padding: 8px 26px;
+  padding: 8px 20px;
+  text-align: center;
 }
 
 .favori{
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .product-card-rating{
   border-radius: 4px;
   background-color: #F2F2F2;
-  width: 140px;
-  height: 37px;
+  padding: 9px 22px 8px 23px;
   font-size: 16px;
   line-height: 20px;
   color:#333333;
+  margin: 0;
+  text-align: center;
+  width: 95px;
 }
 
 /* сетки */
- .page-container{
+.page-container{
   display: flex;
   background-color: #FFFFFF;
   flex-direction: column;
@@ -400,10 +425,10 @@ ol{
 }
 
 .page-header{
-  height: 64px;
-  width: 1200px;
+  width: 1060px;
   position: relative;
   z-index: 0;
+  padding: 0 70px;
 }
 
 .main-container{
@@ -411,19 +436,19 @@ ol{
 }
 
 .logo{
-  min-width: 140px;
-  padding-right: 30px ;
+  display: block;
+  padding-right: 30px;
+  height: 64px;
 }
 
 .navigation{
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 
 .navigation-list{
+  position: relative;
   display: flex;
   align-items: center;
   max-width: 450px;
@@ -431,8 +456,7 @@ ol{
 }
 
 .navigation-user{
-  gap: 20px;
-  width: 268px;
+  max-width: 450px;
   margin-left: auto;
 }
 
@@ -496,22 +520,11 @@ ol{
 
 .contacts-logo{
   height: 33px;
-  width: 115px;
 }
 
 .sorting{
   display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
-}
-
-.navigation-item-link{
-  padding: 20px 16px;
-}
-
-.interes{
-  padding-bottom: 20px;
-  margin: 0 auto;
 }
 
 .mode-view{
@@ -520,6 +533,7 @@ ol{
 
 .mode-view-item{
   border: 2px solid #E5E5E5;
+  margin-left: 8px;
 }
 
 .mode-cards{
@@ -562,10 +576,16 @@ ol{
 }
 
 .product-card{
-  margin-right: 20px;
   padding: 20px;
   height: 438px;
-  max-width: 340px
+  max-width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  row-gap: 16px;
+  column-gap: 20px;
 }
 
 .social-link-vkontakte{
@@ -592,10 +612,6 @@ ol{
   display: block;
 }
 
-.four-stars{
-
-}
-
 .pagination{
   display: flex;
   gap: 8px;
@@ -606,11 +622,12 @@ ol{
 }
 
 .product-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
   margin-top: 40px;
   margin-bottom: 80px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .pagination-link{
@@ -639,4 +656,55 @@ ol{
 .pagination-prev{
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.search-icon{
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.favourite-icon{
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/header/favourites.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.star{
+  height: 17px;
+  width: 105px;
+}
+
+.star::before {
+  content: '';
+  display: block;
+  height: 17px;
+  background-image: url(../image/catalog/star.svg);
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+.four-stars::before {
+  width: 85px;
+}
+
+.three-stars::before {
+  width: 65px;
+}
+
+.stars-two::before{
+  width: 45px;
+}
+
+.apply-butt{
+  width: 191px;
+  height: 104px;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-left: 70px;
 }
