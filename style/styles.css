@@ -130,6 +130,15 @@ ol{
   margin: 0;
 }
 
+.advantages-title-text{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+}
+
 .advantages-title::after{
   content: '';
   margin: 30px auto 0;
@@ -174,17 +183,19 @@ ol{
 }
 
 .advantages-item-text{
-  padding: 103px 85px;
+  padding: 102px 85px;
   text-align: center;
 }
 
 .advantages-description-text{
   color: #333333;
   margin: 0;
+  margin-top: 30px;
 }
 
 .advantages-description{
   margin: 0;
+  margin-top: 30px;
 }
 
 .button-all{
@@ -274,8 +285,8 @@ ol{
 
 .inner-section{
   display: flex;
-  width: 1060px;
-  height: 160px;
+  max-height: 160px;
+  flex-wrap: wrap;
 }
 
 .inner-section-title{
@@ -290,18 +301,45 @@ ol{
 .inner-header{
   width: 1060px;
   height: 107px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs{
+  display: flex;
   margin: 0;
-  width: 114px;
-  height: 21px;
+  gap: 10px;
 }
 
 .breadcrumbs-link{
   font-size: 16px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.breadcrumbs-item:nth-child(1){
+  padding: 3px;
+}
+
+.breadcrumbs-item:nth-child(2){
+  padding: 5px 1px;
+}
+
+.breadcrumbs-link-home{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../image/catalog/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-link-arrow{
+  display: block;
+  background-image: url(../image/catalog/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 7px;
+  height: 10px;
 }
 
 .control{
@@ -316,6 +354,9 @@ ol{
   color:#FFFFFF;
   padding: 8px 50px;
   border: none;
+  width: 191px;
+  margin-bottom: 32px;
+  cursor: pointer;
 }
 
 .button-apply{
@@ -326,6 +367,8 @@ ol{
   background: transparent;
   padding: 8px 50px;
   border: none;
+  width: 191px;
+  cursor: pointer;
 }
 
 .catalog-filter-title{
@@ -335,6 +378,7 @@ ol{
   text-transform: capitalize;
   color: #FFFFFF;
   cursor: pointer;
+  margin-bottom: 32px;
 }
 
 .hotels-found{
@@ -507,10 +551,8 @@ ol{
 }
 
 .services-item{
-  width: 400px;
-  min-height: 385px;
-  box-sizing: border-box;
-  padding: 103px 85px;
+  width: 230px;
+  padding: 153px 85px 81px;
   text-align: center;
 }
 
@@ -694,6 +736,20 @@ ol{
   background-position: center;
 }
 
+.favourit-icon{
+  position: absolute;
+  left: 64px;
+  top: 11px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+  max-width: 50px;
+}
+
 .star{
   height: 17px;
   width: 105px;
@@ -723,9 +779,7 @@ ol{
 .apply-butt{
   width: 191px;
   height: 104px;
-  margin: 0 auto;
   padding-top: 56px;
-  padding-left: 70px;
 }
 
 .navigation-item{
@@ -742,4 +796,82 @@ ol{
 
 .navigation-item-link{
   padding: 20px 16px;
+}
+
+.services-item-home{
+  background-image: url(../image/main/housing.svg);
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.services-item-food{
+  background-image: url(../image/main/food.svg);
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.services-item-souvenirs{
+  background-image: url(../image/main/housing.svg);
+  background-repeat: no-repeat;
+  background-position: top 80px center;
+}
+
+.checkboxes{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkboxes:nth-child(1){
+  margin-right: 70px;
+}
+
+.checkboxes:nth-child(2){
+  margin-right: auto;
+}
+
+.checkboxes:nth-child(3){
+  margin-right: 70px;
+}
+
+.catalog-filter-item{
+  margin-bottom: 16px;
+}
+
+.control-input:disabled ~ .control-label{
+  opacity: 0,3;
+}
+
+.control-input[type="checkbox"] {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.control-input[type="checkbox"]:checked {
+  background-image: url(../image/catalog/tick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.control-radio[type="radio"] {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+
+}
+
+.control-radio[type="radio"]:checked {
+  background-image: url(../image/catalog/tick-2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
