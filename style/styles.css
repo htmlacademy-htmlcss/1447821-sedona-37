@@ -47,6 +47,10 @@ body{
   display: block;
   cursor: pointer;
 }
+.button:hover{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 ul,
 ol{
@@ -66,7 +70,10 @@ ol{
   text-transform: capitalize;
   padding: 20px 16px;
 }
-
+.navigation-item:hover,
+.navigation-item-link:hover{
+  background-color: #f2f2f2;
+}
 /* main */
 .picture-with-logo{
   background-image: url("../image/main/white-stripe.svg"),url("../image/main/index-background.jpg");
@@ -258,6 +265,10 @@ ol{
   color: #FFFFFF;
   font-size: 20px;
   line-height: 36px;
+}
+
+.newsletter-button{
+
 }
 
 /* footer */
@@ -797,10 +808,6 @@ ol{
 
 .navigation-item:nth-child(3){
   width: 160px;
-}
-
-.navigation-item-link{
-  position: relative;
 }
 
 .services-item-home{
