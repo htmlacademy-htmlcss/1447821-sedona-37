@@ -75,7 +75,7 @@ ol{
   background-position: bottom, center;
   background-color: #82B3D3;
   box-sizing: border-box;
-  background-size: 100% auto, cover;
+  background-size: contain, cover;
   text-align: center;
   padding: 51px 70px 78px;
   color: #FFFFFF;
@@ -232,9 +232,10 @@ ol{
   width: 100%;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
-  border: none;
+  border: 3px solid transparent;
   margin: 0;
   font-size: 18px;
+  outline:none;
 }
 
 .subscribe-form{
@@ -366,7 +367,7 @@ ol{
   line-height: 20px;
   background: transparent;
   padding: 8px 50px;
-  border: none;
+  border: 3px solid transparent;
   width: 191px;
   cursor: pointer;
   border-radius: 4px;
@@ -948,8 +949,12 @@ ol{
   color: rgba(255, 255, 255, 0.30);
 }
 
+.subscribe-form input:hover{
+  background: #E6E6E6;
+}
+
 .subscribe-form input:focus{
-  outline: none;
+  border: 3px solid #83B3D3;
 }
 
 .pagination-link:hover:not(.pagination-current,.pagination-prev),
@@ -993,11 +998,11 @@ ol{
   opacity: 0.6;
 }
 
+.min-price:focus,
 .control-input:focus,
 .control-radio:focus,
-.min-price:focus,
 .button-apply:focus{
-border: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .select-control:hover,
@@ -1046,10 +1051,20 @@ border: 3px solid #83B3D3;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  border: none;
+  border: 3px solid transparent;
   box-sizing: border-box;
+  outline:none;
 }
 
 .min-price:hover{
   background: #E6E6E6;
+}
+
+
+.catalog-filter-item:hover{
+  opacity: 0.6;
+}
+
+.catalog-filter-item:active{
+  opacity: 0.3;
 }
