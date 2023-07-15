@@ -284,8 +284,7 @@ ol{
 
 .inner-section{
   display: flex;
-  max-height: 160px;
-  flex-wrap: wrap;
+  height: 160px;
 }
 
 .inner-section-title{
@@ -381,6 +380,7 @@ ol{
   color: #FFFFFF;
   cursor: pointer;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .hotels-found{
@@ -557,6 +557,7 @@ ol{
 .interested-consider{
   padding: 70px 70px;
   text-align: center;
+  margin-bottom: 21px;
 }
 
 .services-item{
@@ -655,30 +656,6 @@ ol{
   column-gap: 20px;
 }
 
-.social-link-vkontakte{
-  background-image: url(../image/footer/vkontakte.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 13px 12px;
-  display: block;
-}
-
-.social-link-telegram{
-  background-image: url(../image/footer/telegram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 13px 12px;
-  display: block;
-}
-
-.social-link-youtube{
-  background-image: url(../image/footer/youtube.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 13px 12px;
-  display: block;
-}
-
 .pagination{
   display: flex;
   gap: 8px;
@@ -747,7 +724,7 @@ ol{
 
 .favourit-icon{
   position: absolute;
-  left: 64px;
+  left: 20px;
   top: 11px;
   padding: 5px;
   font-weight: 400;
@@ -792,6 +769,7 @@ ol{
 }
 
 .navigation-item:nth-child(2){
+  position: relative;
   margin-right: 20px;
 }
 
@@ -832,10 +810,30 @@ ol{
 }
 
 .checkboxes:nth-child(3){
+  display: flex;
+  position: relative;
   margin-right: 70px;
 }
 
+.checkboxes:nth-child(3)::before{
+  left: 106px;
+  content: 'от';
+}
+
+.catalog-price::after{
+  content: 'до';
+  right: 20px;
+}
+
+.checkboxes:nth-child(3)::before,
+.catalog-price::after{
+  position: absolute;
+  top: 12px;
+  color: #AAAAAA;
+}
+
 .catalog-filter-item{
+  display: flex;
   margin-bottom: 16px;
 }
 
@@ -897,7 +895,8 @@ ol{
   background-color: #756157;
   content: "";
 }
-
+.product-card-link:focus,
+.product-card-link:hover,
 .favourite-icon:focus,
 .favourite-icon:hover,
 .search-icon:focus,
@@ -907,6 +906,7 @@ ol{
   background-color: #F2F2F2;
 }
 
+.product-card-link:active,
 .favourite-icon:active,
 .search-icon:active,
 .navigation-link:active{
@@ -920,6 +920,18 @@ ol{
   background-color: #615048;
 }
 
+.footer-social-icon {
+  fill: #000;
+}
+
+.footer-social-icon:focus,
+.footer-social-icon:hover{
+  fill: rgba(117, 97, 87, 1);
+}
+
+.footer-social-icon:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
 
 .contacts-address-phone:focus,
 .contacts-address-phone:hover{
@@ -940,8 +952,6 @@ ol{
   outline: none;
 }
 
-.social-item-link:hover,
-.social-item-link:focus,
 .pagination-link:hover:not(.pagination-current,.pagination-prev),
 .favorites:hover:not(.favori),
 .apply-button:hover,
@@ -953,7 +963,7 @@ ol{
   background-color: #68A2CA;
 }
 
-.social-item-link:active,
+
 .pagination-link:active:not(.pagination-current,.pagination-prev),
 .favorites:active,
 .apply-button:active,
@@ -983,6 +993,9 @@ ol{
   opacity: 0.6;
 }
 
+.control-input:focus,
+.control-radio:focus,
+.min-price:focus,
 .button-apply:focus{
 border: 3px solid #83B3D3;
 }
@@ -992,6 +1005,7 @@ border: 3px solid #83B3D3;
   border: 2px solid #68A2CA;
 }
 
+
 .mode-view:focus {
   border: 2px solid #68A2CA;
 }
@@ -1000,6 +1014,42 @@ border: 3px solid #83B3D3;
   border: 2px solid #000000;
 }
 
-.min-price{
+.footer-social{
+  fill: #83B3D3;
+}
+
+.footer-social:hover,
+.footer-social:focus{
+  fill: #68A2CA;
+}
+
+.footer-social:active{
+  fill: #68A2CA;
+  opacity: 0.3;
+}
+
+.pric{
+  border-radius: 4px 0 0 4px;
+}
+
+.price{
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-div input {
+  appearance: none;
+  width: 143px;
+  height: 48px;
   padding: 12px 20px;
+  padding-right: 40px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.min-price:hover{
+  background: #E6E6E6;
 }
