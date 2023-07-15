@@ -1019,6 +1019,12 @@ ol{
   border: 2px solid #000000;
 }
 
+.mode-view-item:active,
+.mode-view:active{
+  background-color: #AAAAAA;
+  outline: 0.6;
+}
+
 .footer-social{
   fill: #83B3D3;
 }
