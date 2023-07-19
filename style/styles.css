@@ -347,6 +347,7 @@ ol{
 }
 
 .apply-button{
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -361,6 +362,7 @@ ol{
 }
 
 .button-apply{
+  text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
@@ -1073,4 +1075,236 @@ ol{
 
 .catalog-filter-item:active{
   opacity: 0.3;
+}
+
+.range-skale{
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+  margin-top: 48px;
+}
+
+.range-bar{
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+  width: 226px;
+}
+
+.range-toggle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  top: -8px;
+}
+
+.range-toggle:nth-child(2){
+  right: -1px;
+  top: -8px;
+}
+
+.dialog{
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+width: 100%;
+height: 100%;
+background: rgba(242, 242, 242, 0.80);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 577px;
+}
+
+.modal-close-button{
+  position: absolute;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border: none;
+  background-image: url("../image/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  right: 51px;
+  top: 65px;
+}
+
+.modal-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px
+}
+
+.modal-label{
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+.modal-input{
+  padding: 12px 20px;
+  width: 440px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+  background-image: url(../image/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: top 15px right 22px;
+  background-size: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.modal-span{
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-span-text{
+  margin-right: 46px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-text{
+  color: #ff5757;
+  margin-left: 157px;
+}
+
+.text-modal{
+  color: #000;
+}
+
+.modal-div{
+  margin-bottom: 23px;
+}
+
+.modal-count{
+  padding: 14px 10px;
+  border: none;
+  min-width: 40px;
+  height: 48px;
+}
+
+.persons-number{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 14px 0;
+  width: 31px
+}
+
+.people-count{
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.tooltip-toggle{
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-image: url(../image/sign.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tooltip-icon{
+  width: 1px;
+  height: 9px;
+  color: #83b3d3;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color:#68a2ca;
+}
+
+.tooltip-text{
+  font-family: "PT Sans", sans-serif;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 20px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  z-index: 1;
+  transform: translateX(-39%);
+  margin-top: 15px;
+}
+
+.tooltip {
+  margin-right: 46px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.div-flex{
+  display: flex;
+  margin-left: 88px;
+  align-items: center;
+}
+
+.div-flexs{
+  display: flex;
+  align-items: center;
+}
+
+.modal-search-button{
+  width: 577px;
+  padding: 18px 77px;
+  border-radius: 10px;
+  background: #83B3D3;
+  border: none;
+  margin-top: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
 }
