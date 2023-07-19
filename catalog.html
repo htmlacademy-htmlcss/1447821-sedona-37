@@ -67,15 +67,15 @@
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="checkbox" name="infrastructure" value="pool" id="pool" checked>
+                      <input class="control-input" type="checkbox" name="pool" value="pool" id="pool" checked>
                       <label class="control" for="pool">Бассейн</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="checkbox" name="infrastructure" value="parking" id="parking" checked>
+                      <input class="control-input" type="checkbox" name="parking" value="parking" id="parking" checked>
                       <label class="control" for="parking">Парковка</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi" id="Wi-Fi">
+                      <input class="control-input" type="checkbox" name="Wi-Fi" value="Wi-Fi" id="Wi-Fi">
                       <label class="control" for="Wi-Fi">Wi-Fi</label>
                     </li>
                   </ul>
@@ -84,15 +84,15 @@
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <input class="control-radio" type="radio" name="question-one" value="hotel" id="hotel" checked>
+                      <input class="control-radio" type="radio" name="hotel" value="hotel" id="hotel" checked>
                       <label class="control" for="hotel">Гостиница</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-radio" type="radio" name="question-one" value="motel" id="motel">
+                      <input class="control-radio" type="radio" name="motel" value="motel" id="motel">
                       <label class="control" for="motel">Мотель</label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-radio" type="radio" name="question-one" value="appartments" id="appartments">
+                      <input class="control-radio" type="radio" name="appartments" value="appartments" id="appartments">
                       <label class="control" for="appartments">Апартаменты</label>
                     </li>
                   </ul>
@@ -101,8 +101,12 @@
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="range">
                     <div class="catalog-div">
-                      <input class="min-price pric" type="text" value="0">
-                      <input class="min-price price" type="text" value="9000">
+                      <input class="min-price pric" type="text" value="0" placeholder="от"
+                      name="price-from" min="1" max="99999" id="price-from-field"
+                      aria-label="Прописать значение фильтра цена от.">
+                      <input class="min-price price" type="text" value="9000" placeholder="до"
+                      name="price-to" min="1" max="99999" id="price-to-field"
+                      aria-label="Прописать значение фильтра цена до.">
                     </div>
                     <div class="range-skale">
                       <div  class="range-bar">
