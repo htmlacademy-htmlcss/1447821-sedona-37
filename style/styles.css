@@ -69,7 +69,7 @@ ol{
   padding: 20px 16px;
 }
 /* main */
-.picture-with-logo{
+.hero{
   background-image: url("../image/main/white-stripe.svg"),url("../image/main/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
@@ -204,7 +204,7 @@ ol{
   padding: 8px 50px;
 }
 
-.insert-from{
+.subscrib{
   background-image: url("../image/main/picture-background.jpg");
   background-color: #7DB54F;
   background-size: cover;
@@ -214,7 +214,7 @@ ol{
   text-align: center;
 }
 
-.insert-fro{
+.subscribe{
   padding: 96px 258px 104px 258px;
   text-align: center;
 }
@@ -283,7 +283,7 @@ ol{
   padding: 35px 70px 70px 70px;
 }
 
-.inner-section{
+.filter{
   display: flex;
   height: 160px;
 }
@@ -579,7 +579,7 @@ ol{
   text-align: center;
 }
 
-.services-button{
+.search{
   padding: 96px 70px;
   text-align: center;
 }
@@ -665,7 +665,7 @@ ol{
   gap: 8px;
 }
 
-.hotel-sorting{
+.catalog{
   padding: 50px 70px 60px 70px;
 }
 
