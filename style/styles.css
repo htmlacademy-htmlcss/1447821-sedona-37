@@ -373,6 +373,7 @@ ol{
   width: 191px;
   cursor: pointer;
   border-radius: 4px;
+  height: 36px;
 }
 
 .catalog-filter-title{
@@ -553,7 +554,7 @@ ol{
 
 
 .promo-header-container{
-  padding: 70px 70px;
+  padding: 64px 70px;
   text-align: center;
 }
 
@@ -579,7 +580,7 @@ ol{
 }
 
 .services-button{
-  padding: 70px 70px;
+  padding: 96px 70px;
   text-align: center;
 }
 
@@ -1005,7 +1006,7 @@ ol{
 .min-price:focus,
 .control-input:focus,
 .control-radio:focus,
-.button-apply:focus{
+.button-apply:focus:not(:active){
   border: 3px solid #83B3D3;
 }
 
@@ -1327,4 +1328,8 @@ ol{
 
 .modal-input:hover, .modal-input:focus-visible {
   background-color: #e6e6e6;
+}
+
+.advantages-item-img{
+  height: 100%;
 }
