@@ -92,7 +92,7 @@ ol{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .vis{
@@ -172,7 +172,7 @@ ol{
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
-  padding: 103px 85px;
+  padding: 112px 70px;
   text-align: center;
 }
 
@@ -295,6 +295,7 @@ ol{
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .inner-header{
@@ -353,8 +354,8 @@ ol{
   line-height: 20px;
   background-color: #82B3D3;
   color:#FFFFFF;
-  padding: 8px 50px;
   border: none;
+  height: 36px;
   width: 191px;
   margin-bottom: 32px;
   cursor: pointer;
@@ -368,7 +369,6 @@ ol{
   font-size: 16px;
   line-height: 20px;
   background: transparent;
-  padding: 8px 50px;
   border: 3px solid transparent;
   width: 191px;
   cursor: pointer;
@@ -559,7 +559,7 @@ ol{
 }
 
 .interested-consider{
-  padding: 70px 70px;
+  padding: 69px 70px;
   text-align: center;
   margin-bottom: 21px;
 }
@@ -794,7 +794,7 @@ ol{
 }
 
 .services-item-souvenirs{
-  background-image: url(../image/main/housing.svg);
+  background-image: url(../image/main/souvenirs.svg);
   background-repeat: no-repeat;
   background-position: top 80px center;
 }
@@ -1332,4 +1332,14 @@ ol{
 
 .advantages-item-img{
   height: 100%;
+}
+
+.interested-text {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
