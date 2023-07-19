@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="style/styles.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
-      <header class="page-header">
-        <a class="logo" href="index.html">
+      <header class="page-header" data-test="header">
+        <a class="logo" href="index.html" aria-current="page">
           <img src="image/header/logo.svg" width="140" height="70" alt="Логотип города Седона" >
         </a>
         <nav class="navigation">
@@ -41,12 +42,12 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
-        <div class="picture-with-logo">
-          <img class="picture" src="image/main/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+      <main class="main-container main-index" data-test="main">
+        <section class="hero" data-test="hero">
+          <img class="picture" src="image/main/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
           <h1 class="visually-hidden">Приемущества Седоны</h1>
-        </div>
-        <section class="advantages">
+        </section>
+        <section class="advantages" data-test="advantages">
           <div class="interested-consider">
             <h2 class="interested">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="services-content">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -60,7 +61,7 @@
               <img class="advantages-item-img" src="image/main/photo-1.jpg" height="385" width="800" alt="Домик на фоне гор">
             </li>
             <li class="advantages-item advantages-color">
-              <h3 class="advantages-title title-advantages">Небольшая площадь</h3>
+              <h3 class="advantages-title title-advantages">Небольшая <br>площадь</h3>
               <p class="advantages-description-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-item advantages-color">
@@ -73,41 +74,41 @@
             </li>
             <li class="advantages-item advantages-text item-text">
               <div class="advantages-item-text">
-                <h3 class="advantages-title ">Там есть мост дьявола</h3>
+                <h3 class="advantages-title ">Там есть <br>мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-item-img" src="image/main/photo-2.jpg" height="100%" width="800" alt="Мост дьявола,место для туристов">
+              <img class="advantages-item-img" src="image/main/photo-2.jpg" height="385" width="800" alt="Мост дьявола,место для туристов">
             </li>
           </ul>
         </section>
-        <section class="services">
+        <section class="services" data-test="services">
           <div class="promo-header-container">
-            <h2 class="interested">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+            <h2 class="interested-text">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p class="services-content">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="services-list">
             <li class="services-item services-item-home">
               <h3 class="advantages-title-text">Жильё</h3>
-              <p class="advantages-description-text">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+              <p class="advantages-description-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="services-item services-item-food">
               <h3 class="advantages-title-text">Еда</h3>
-              <p class="advantages-description-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-description-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="services-item services-item-souvenirs">
               <h3 class="advantages-title-text">Сувениры</h3>
-              <p class="advantages-description-text">Не только китайского,но и настоящего местного производства!</p>
+              <p class="advantages-description-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
             </li>
           </ul>
         </section>
-        <section class="services-button">
-            <h2 class="interested">Заинтересовались?</h2>
+        <section class="search" data-test="search">
+            <h2 class="interested-text">Заинтересовались?</h2>
             <p class="consider">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button button-all" href="#">Поиск гостиницы в седоне</a>
         </section>
-        <section class="insert-from">
+        <section class="subscrib" data-test="subscrib">
           <h2 class="vis">Подпишитесь на рассылку</h2>
-          <p class="p-cons">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="p-cons">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email-shape" >Ваш email</label>
             <input type="email" name="email-shape" id="email-shape" placeholder="Ваш e-mail">
@@ -117,7 +118,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-="footer">
         <ul class="contacts-social-list" aria-label="Социальные сети">
           <li class="social-item">
             <a class="social-item-link" href="https://vk.com/htmlacademy">
@@ -165,6 +166,81 @@
           </svg>
         </a>
       </footer>
+      <dialog class="dialog" data-test="dialog">
+        <div class="modal">
+          <h2 class="modal-title">Поиск гостиницы седоны</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
+            <div class="modal-div">
+            <label class="modal-label">
+              <span class="modal-span">Дата заезда</span>
+              <input class="modal-input" type="text" id="firsDate" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
+            </label>
+            <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-div">
+            <label class="modal-label">
+              <span class="modal-span">Дата выезда</span>
+              <input class="modal-input" type="text" id="firsDat" placeholder="Укажите дату" name="arrive-date" value="1 сентября 2023">
+            </label>
+            <span class="modal-text text-modal">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+            <div class="modal-label">
+              <div class="div-flexs">
+                <span class="modal-span-text">Взрослые:</span>
+                <button class="modal-count" type="button">
+                  <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка уменьшения</span>
+              </button>
+              <input class="persons-number" type="text" id="adult-number" value="2" name="child-number">
+              <button class="modal-count" type="button">
+                <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка увеличения</span>
+              </button>
+              </div>
+              <div class="div-flex">
+            <div class="people-count">Дети:</div>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+                <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                </g>
+              </svg>
+            </button>
+            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+              которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+              <button class="modal-count" type="button">
+                <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                <path d="M3 9v2h14V9H3Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка уменьшения</span>
+              </button>
+              <input class="persons-number" type="text" id="child-number" value="2" name="child-number">
+                <button class="modal-count" type="button">
+                  <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка увеличения</span>
+                </button>
+              </div>
+            </div>
+            <button class="modal-search-button" type="submit">Найти</button>
+          </form>
+        </div>
+      </dialog>
     </div>
   </body>
 </html>

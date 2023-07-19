@@ -69,7 +69,7 @@ ol{
   padding: 20px 16px;
 }
 /* main */
-.picture-with-logo{
+.hero{
   background-image: url("../image/main/white-stripe.svg"),url("../image/main/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
@@ -92,7 +92,7 @@ ol{
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .vis{
@@ -172,7 +172,7 @@ ol{
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
-  padding: 103px 85px;
+  padding: 112px 70px;
   text-align: center;
 }
 
@@ -204,7 +204,7 @@ ol{
   padding: 8px 50px;
 }
 
-.insert-from{
+.subscrib{
   background-image: url("../image/main/picture-background.jpg");
   background-color: #7DB54F;
   background-size: cover;
@@ -214,7 +214,7 @@ ol{
   text-align: center;
 }
 
-.insert-fro{
+.subscribe{
   padding: 96px 258px 104px 258px;
   text-align: center;
 }
@@ -283,18 +283,18 @@ ol{
   padding: 35px 70px 70px 70px;
 }
 
-.inner-section{
+.filter{
   display: flex;
   height: 160px;
 }
 
 .inner-section-title{
-  width: 494px;
   height: 78px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .inner-header{
@@ -347,13 +347,14 @@ ol{
 }
 
 .apply-button{
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: #82B3D3;
   color:#FFFFFF;
-  padding: 8px 50px;
   border: none;
+  height: 36px;
   width: 191px;
   margin-bottom: 32px;
   cursor: pointer;
@@ -361,16 +362,17 @@ ol{
 }
 
 .button-apply{
+  text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background: transparent;
-  padding: 8px 50px;
   border: 3px solid transparent;
   width: 191px;
   cursor: pointer;
   border-radius: 4px;
+  height: 36px;
 }
 
 .catalog-filter-title{
@@ -411,7 +413,7 @@ ol{
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding-right: 30px;
-  margin-right: 70px;
+  margin-right: 61px;
 }
 
 .product-card-link{
@@ -547,16 +549,17 @@ ol{
   gap: 20px;
   padding: 40px 70px 30px 70px;
   align-items: center;
+  height: 100%;
 }
 
 
 .promo-header-container{
-  padding: 70px 70px;
+  padding: 64px 70px;
   text-align: center;
 }
 
 .interested-consider{
-  padding: 70px 70px;
+  padding: 69px 70px;
   text-align: center;
   margin-bottom: 21px;
 }
@@ -576,8 +579,8 @@ ol{
   text-align: center;
 }
 
-.services-button{
-  padding: 70px 70px;
+.search{
+  padding: 96px 70px;
   text-align: center;
 }
 
@@ -594,6 +597,7 @@ ol{
 .sorting{
   display: flex;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .mode-view{
@@ -647,7 +651,6 @@ ol{
 .product-card{
   padding: 20px;
   height: 438px;
-  max-width: 340px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   display: grid;
@@ -662,7 +665,7 @@ ol{
   gap: 8px;
 }
 
-.hotel-sorting{
+.catalog{
   padding: 50px 70px 60px 70px;
 }
 
@@ -791,7 +794,7 @@ ol{
 }
 
 .services-item-souvenirs{
-  background-image: url(../image/main/housing.svg);
+  background-image: url(../image/main/souvenirs.svg);
   background-repeat: no-repeat;
   background-position: top 80px center;
 }
@@ -957,6 +960,8 @@ ol{
   border: 3px solid #83B3D3;
 }
 
+.modal-search-button:hover,
+.modal-search-button:focus,
 .pagination-link:hover:not(.pagination-current,.pagination-prev),
 .favorites:hover:not(.favori),
 .apply-button:hover,
@@ -968,7 +973,7 @@ ol{
   background-color: #68A2CA;
 }
 
-
+.modal-search-button:active,
 .pagination-link:active:not(.pagination-current,.pagination-prev),
 .favorites:active,
 .apply-button:active,
@@ -1001,7 +1006,7 @@ ol{
 .min-price:focus,
 .control-input:focus,
 .control-radio:focus,
-.button-apply:focus{
+.button-apply:focus:not(:active){
   border: 3px solid #83B3D3;
 }
 
@@ -1073,4 +1078,264 @@ ol{
 
 .catalog-filter-item:active{
   opacity: 0.3;
+}
+
+.range-skale{
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+  margin-top: 48px;
+}
+
+.range-bar{
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+  width: 226px;
+}
+
+.range-toggle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  top: -8px;
+}
+
+.range-toggle:nth-child(2){
+  right: -1px;
+  top: -8px;
+}
+
+.dialog{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.80);
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 577px;
+}
+
+.modal-close-button{
+  position: absolute;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border: none;
+  background-image: url("../image/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  right: 51px;
+  top: 65px;
+}
+
+.modal-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px
+}
+
+.modal-label{
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+.modal-input{
+  padding: 12px 20px;
+  width: 440px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+  background-image: url(../image/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: top 15px right 22px;
+  background-size: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.modal-span{
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-span-text{
+  margin-right: 46px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.modal-text{
+  color: #ff5757;
+  margin-left: 157px;
+}
+
+.text-modal{
+  color: #000;
+}
+
+.modal-div{
+  margin-bottom: 23px;
+}
+
+.modal-count{
+  padding: 14px 10px;
+  border: none;
+  min-width: 40px;
+  height: 48px;
+}
+
+.persons-number{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 14px 0;
+  width: 31px
+}
+
+.people-count{
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.tooltip-toggle{
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-image: url(../image/sign.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tooltip-icon{
+  width: 1px;
+  height: 9px;
+  color: #83b3d3;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color:#68a2ca;
+}
+
+.tooltip-text{
+  font-family: "PT Sans", sans-serif;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 20px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  z-index: 1;
+  transform: translateX(-39%);
+  margin-top: 15px;
+}
+
+.tooltip {
+  margin-right: 46px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.div-flex{
+  display: flex;
+  margin-left: 88px;
+  align-items: center;
+}
+
+.div-flexs{
+  display: flex;
+  align-items: center;
+}
+
+.modal-search-button{
+  width: 577px;
+  padding: 18px 77px;
+  border-radius: 10px;
+  background: #83B3D3;
+  border: none;
+  margin-top: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  border: solid 3px #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  border: 3px solid transparent;
+}
+
+.modal-input:hover, .modal-input:focus-visible {
+  background-color: #e6e6e6;
+}
+
+.interested-text {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
