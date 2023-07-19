@@ -1267,7 +1267,6 @@ background: rgba(242, 242, 242, 0.80);
   border-radius: 10px;
   display: block;
   width: 256px;
-  left: 50%;
   z-index: 1;
   transform: translateX(-39%);
   margin-top: 15px;
