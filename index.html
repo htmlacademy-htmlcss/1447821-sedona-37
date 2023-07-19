@@ -165,6 +165,83 @@
           </svg>
         </a>
       </footer>
+      <dialog class="dialog" open>
+        <div class="modal">
+          <h2 class="modal-title">Поиск гостиницы седоны</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
+            <div class="modal-div">
+            <label class="modal-label">
+              <span class="modal-span">Дата заезда</span>
+              <input class="modal-input" type="text" id="firsDate" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
+            </label>
+            <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-div">
+            <label class="modal-label">
+              <span class="modal-span">Дата выезда</span>
+              <input class="modal-input" type="text" id="firsDat" placeholder="Укажите дату" name="arrive-date" value="1 сентября 2023">
+            </label>
+            <span class="modal-text text-modal">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+            <label class="modal-label">
+              <div class="div-flexs">
+                <span class="modal-span-text">Взрослые:</span>
+                <button class="modal-count" type="button">
+                  <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                  <path d="M3 9v2h14V9H3Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка уменьшения</span>
+              </button>
+              <input class="persons-number" type="text" id="adult-number" value="2" name="child-number" min="1"
+              max="10">
+              <button class="modal-count" type="button">
+                <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка увеличения</span>
+              </button>
+              </div>
+              <div class="div-flex">
+            <label class="people-count" for="child-number">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+                <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                </g>
+              </svg>
+            </button>
+            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+              которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+              <button class="modal-count" type="button">
+                <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                <path d="M3 9v2h14V9H3Z" />
+                </svg>
+                <span class="visually-hidden">Кнопка уменьшения</span>
+              </button>
+              <input class="persons-number" type="text" id="child-number" value="2" name="child-number" min="1"
+                max="10">
+                <button class="modal-count" type="button">
+                  <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                  <span class="visually-hidden">Кнопка увеличения</span>
+                </button>
+              </div>
+            </label>
+            <button class="modal-search-button" type="submit">Найти</button>
+          </form>
+        </div>
+      </dialog>
     </div>
   </body>
 </html>
