@@ -959,6 +959,8 @@ ol{
   border: 3px solid #83B3D3;
 }
 
+.modal-search-button:hover,
+.modal-search-button:focus,
 .pagination-link:hover:not(.pagination-current,.pagination-prev),
 .favorites:hover:not(.favori),
 .apply-button:hover,
@@ -970,7 +972,7 @@ ol{
   background-color: #68A2CA;
 }
 
-
+.modal-search-button:active,
 .pagination-link:active:not(.pagination-current,.pagination-prev),
 .favorites:active,
 .apply-button:active,
@@ -1109,13 +1111,13 @@ ol{
 }
 
 .dialog{
-position: fixed;
-top: 0;
-left: 0;
-display: flex;
-width: 100%;
-height: 100%;
-background: rgba(242, 242, 242, 0.80);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.80);
 }
 
 .modal {
@@ -1307,4 +1309,22 @@ background: rgba(242, 242, 242, 0.80);
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  border: solid 3px #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  border: 3px solid transparent;
+}
+
+.modal-input:hover, .modal-input:focus-visible {
+  background-color: #e6e6e6;
 }
