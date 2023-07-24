@@ -60,16 +60,22 @@
               <img class="advantages-item-img" src="image/main/photo-1.jpg" height="385" width="800" alt="Домик на фоне гор">
             </li>
             <li class="advantages-item advantages-color">
-              <h3 class="advantages-title title-advantages">Небольшая площадь</h3>
-              <p class="advantages-description-text">Все достопримечательности находятся очень близко</p>
+              <div class="advantages-item-text">
+                <h3 class="advantages-title title-advantages">Небольшая площадь</h3>
+                <p class="advantages-description-text">Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
             <li class="advantages-item advantages-color">
+              <div class="advantages-item-text">
                 <h3 class="advantages-title title-advantages">Красивая дорога</h3>
                 <p class="advantages-description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="advantages-item advantages-color">
-              <h3 class="advantages-title title-advantages">Мало туристов</h3>
-              <p class="advantages-description-text">Большинство едет в Гранд Каньон и толпится там</p>
+              <div class="advantages-item-text">
+                <h3 class="advantages-title title-advantages">Мало туристов</h3>
+                <p class="advantages-description-text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
             <li class="advantages-item advantages-text item-text">
               <div class="advantages-item-text">
@@ -80,22 +86,22 @@
             </li>
           </ul>
         </section>
-        <section class="services" data-test="services">
+        <section class="services" data-test="service">
           <h2 class="visually-hidden">Информация</h2>
             <p class="interested-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-            <p class="services-content">Опытный персонал и качественное обслуживание!</p>
+            <p class="services-content-text">Опытный персонал и качественное обслуживание!</p>
           <ul class="services-list">
             <li class="services-item services-item-home">
               <h3 class="advantages-title-text">Жильё</h3>
-              <p class="advantages-description-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              <p class="advantages-description-text">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в&nbsp;кино!</p>
             </li>
             <li class="services-item services-item-food">
               <h3 class="advantages-title-text">Еда</h3>
-              <p class="advantages-description-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+              <p class="advantages-description-text">Всегда заказывайте<br>топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="services-item services-item-souvenirs">
               <h3 class="advantages-title-text">Сувениры</h3>
-              <p class="advantages-description-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+              <p class="advantages-description-text">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -104,9 +110,9 @@
             <p class="consider">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button-all" href="#">Поиск гостиницы в седоне</a>
         </section>
-        <section class="subscrib" data-test="subscrib">
+        <section class="subscrib" data-test="subscribe">
           <h2 class="vis">Подпишитесь на рассылку</h2>
-          <p class="p-cons">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <p class="p-cons">Только полезная информация и никакого спама,честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email-shape" >Ваш email</label>
             <input type="email" name="email-shape" id="email-shape" placeholder="Ваш e-mail">
@@ -116,7 +122,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer" data-="footer">
+      <footer class="page-footer" data-test="footer">
         <div class="page-footer-conteiner">
           <ul class="contacts-social-list" aria-label="Социальные сети">
             <li class="social-item">
@@ -166,81 +172,75 @@
           </a>
         </div>
       </footer>
-      <dialog data-test="dialog">
-        <div class="modal">
-          <h2 class="modal-title">Поиск гостиницы седоны</h2>
+    </div>
+    <dialog class="dialog modal-container-close">
+      <div class="modal" data-test="modal">
+        <button class="modal-close-button" type="button">
+          <svg width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <button class="modal-close-button">
-              <span class="visually-hidden">Закрыть окно</span>
-            </button>
             <div class="modal-div">
-            <label class="modal-label">
-              <span class="modal-span">Дата заезда</span>
+              <label class="modal-label" for="check-in-date">Дата заезда</label>
               <input class="modal-input" type="text" id="firsDate" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
-            </label>
-            <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
-          </div>
-          <div class="modal-div">
-            <label class="modal-label">
-              <span class="modal-span">Дата выезда</span>
+              <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="modal-div">
+              <label class="modal-label" for="check-in-date">Дата выезда</label>
               <input class="modal-input" type="text" id="firsDat" placeholder="Укажите дату" name="arrive-date" value="1 сентября 2023">
-            </label>
-            <span class="modal-text text-modal">На эти даты есть свободные номера. Пока есть.</span>
-          </div>
-            <div class="modal-label">
-              <div class="div-flexs">
-                <span class="modal-span-text">Взрослые:</span>
+              <span class="modal-text text-modal">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="div-flexs">
+              <label class="modal-label">Взрослые:</label>
+              <span class="modal-span-text">
                 <button class="modal-count" type="button">
-                  <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="20" height="20" fill="#756157" viewBox="0 0 20 20">
-                  <path d="M3 9v2h14V9H3Z" />
-                </svg>
-                <span class="visually-hidden">Кнопка уменьшения</span>
-              </button>
-              <input class="persons-number" type="text" id="adult-number" value="2" name="child-number">
-              <button class="modal-count" type="button">
-                <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                width="14" height="14" fill="#756157" viewBox="0 0 14 14">
-                <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
-                </svg>
-                <span class="visually-hidden">Кнопка увеличения</span>
-              </button>
-              </div>
-              <div class="div-flex">
-            <div class="people-count">Дети:</div>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button">
-                <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)">
-                  <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
-                </g>
-              </svg>
-            </button>
-            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
-              которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-            </span>
-              <button class="modal-count" type="button">
-                <svg class="minus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                width="20" height="20" fill="#756157" viewBox="0 0 20 20">
-                <path d="M3 9v2h14V9H3Z" />
-                </svg>
-                <span class="visually-hidden">Кнопка уменьшения</span>
-              </button>
-              <input class="persons-number" type="text" id="child-number" value="2" name="child-number">
+                  <span class="visually-hidden">Кнопка уменьшения</span>
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                    <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                </button>
+                <input class="persons-number" type="text" id="adult-number" value="2" name="child-number">
                 <button class="modal-count" type="button">
-                  <svg class="plus-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                    width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                  <span class="visually-hidden">Кнопка увеличения</span>
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#756157" viewBox="0 0 14 14">
                     <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                   </svg>
-                  <span class="visually-hidden">Кнопка увеличения</span>
                 </button>
-              </div>
+              </span>
+            </div>
+            <div class="div-flexs">
+              <span class="form-label-icon">
+                <label class="modal-label">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z"></path>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <span class="modal-span-text">
+                <button class="modal-count" type="button">
+                  <span class="visually-hidden">Кнопка уменьшения</span>
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                    <path d="M3 9v2h14V9H3Z" />
+                  </svg>
+                </button>
+                <input class="persons-number" type="text" id="child-number" value="2" name="child-number">
+                <button class="modal-count" type="button">
+                  <span class="visually-hidden">Кнопка увеличения</span>
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#756157" viewBox="0 0 14 14">
+                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  </svg>
+                </button>
+              </span>
             </div>
             <button class="modal-search-button" type="submit">Найти</button>
           </form>
-        </div>
-      </dialog>
-    </div>
+        </section>
+      </div>
+    </dialog>
   </body>
 </html>
