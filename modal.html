@@ -61,22 +61,16 @@
               <img class="advantages-item-img" src="image/main/photo-1.jpg" height="385" width="800" alt="Домик на фоне гор">
             </li>
             <li class="advantages-item advantages-color">
-              <div class="advantages-item-text">
-                <h3 class="advantages-title title-advantages">Небольшая площадь</h3>
-                <p class="advantages-description-text">Все достопримечательности находятся очень близко</p>
-              </div>
+              <h3 class="advantages-title title-advantages">Небольшая площадь</h3>
+              <p class="advantages-description-text">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantages-item advantages-color">
-              <div class="advantages-item-text">
                 <h3 class="advantages-title title-advantages">Красивая дорога</h3>
                 <p class="advantages-description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
             </li>
             <li class="advantages-item advantages-color">
-              <div class="advantages-item-text">
-                <h3 class="advantages-title title-advantages">Мало туристов</h3>
-                <p class="advantages-description-text">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
+              <h3 class="advantages-title title-advantages">Мало туристов</h3>
+              <p class="advantages-description-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item advantages-text item-text">
               <div class="advantages-item-text">
@@ -98,11 +92,11 @@
             </li>
             <li class="services-item services-item-food">
               <h3 class="advantages-title-text">Еда</h3>
-              <p class="advantages-description-text">Всегда заказывайте<br>топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+              <p class="advantages-description-text">Всегда заказывайте<br>топовый фирменный бургер,вы&nbsp;не&nbsp;разочаруетесь!</p>
             </li>
             <li class="services-item services-item-souvenirs">
               <h3 class="advantages-title-text">Сувениры</h3>
-              <p class="advantages-description-text">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+              <p class="advantages-description-text">Не&nbsp;только китайского,но&nbsp;и&nbsp;настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -174,7 +168,7 @@
         </div>
       </footer>
     </div>
-    <dialog class="dialog modal-container-close">
+    <dialog class="dialog">
       <div class="modal" data-test="modal">
         <button class="modal-close-button" type="button">
           <svg width="13" height="13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
@@ -183,13 +177,13 @@
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-div">
-              <label class="modal-label" for="check-in-date">Дата заезда</label>
-              <input class="modal-input" type="text" id="firsDate" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
+              <label class="modal-label" for="check-in-date">Дата заезда:</label>
+              <input class="modal-input calendar-field" type="text" id="firsDate" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
               <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="modal-div">
-              <label class="modal-label" for="check-in-date">Дата выезда</label>
-              <input class="modal-input" type="text" id="firsDat" placeholder="Укажите дату" name="arrive-date" value="1 сентября 2023">
+              <label class="modal-label" for="check-in-date">Дата выезда:</label>
+              <input class="modal-input calendar-field" type="text" id="firsDat" placeholder="Укажите дату" name="arrive-date" value="1 сентября 2023">
               <span class="modal-text text-modal">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="div-flexs">
@@ -197,15 +191,15 @@
               <span class="modal-span-text">
                 <button class="modal-count" type="button">
                   <span class="visually-hidden">Кнопка уменьшения</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                  <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
                 <input class="persons-number" type="text" id="adult-number" value="2" name="child-number">
                 <button class="modal-count" type="button">
                   <span class="visually-hidden">Кнопка увеличения</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#756157" viewBox="0 0 14 14">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                 </button>
               </span>
@@ -225,15 +219,15 @@
               <span class="modal-span-text">
                 <button class="modal-count" type="button">
                   <span class="visually-hidden">Кнопка уменьшения</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
+                  <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9v2h14V9H3Z" />
                   </svg>
                 </button>
                 <input class="persons-number" type="text" id="child-number" value="2" name="child-number">
                 <button class="modal-count" type="button">
                   <span class="visually-hidden">Кнопка увеличения</span>
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#756157" viewBox="0 0 14 14">
-                    <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                  <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                   </svg>
                 </button>
               </span>
