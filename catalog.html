@@ -44,8 +44,8 @@
         </div>
         </header>
         <main class="main-container" data-test="main">
-          <section class="main-section" data-test="main-section">
-            <div class="main-div">
+          <section class="main-inner-header" data-test="main-section">
+            <div class="inner-header-title">
               <header class="inner-header">
                 <h1 class="inner-section-title">Гостиницы Седоны</h1>
                 <ol class="breadcrumbs">
@@ -105,24 +105,30 @@
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="range">
                     <div class="catalog-div">
+                      <label class="catalog-filter-label">
+                        <span class="range-input-label">от</span>
                       <input class="min-price pric" type="text" value="0" placeholder="от"
-                      name="price-from" id="price-from-field"
+                      name="min-price" id="price-from-field"
                       aria-label="Прописать значение фильтра цена от.">
+                      </label>
+                      <label class="catalog-filter-label">
+                        <span class="range-input-label">до</span>
                       <input class="min-price price" type="text" value="9000" placeholder="до"
-                      name="price-to" id="price-to-field"
+                      name="max-price" id="price-to-field"
                       aria-label="Прописать значение фильтра цена до.">
+                      </label>
                     </div>
                     <div class="range-skale">
                       <div class="range-bar">
-                      <button class="range-toggle" aria-label="уменьшения"></button>
-                      <button class="range-toggle" aria-label="увеличения"></button>
+                      <button class="range-toggle"  type="button" aria-label="уменьшения"></button>
+                      <button class="range-toggle"  type="button" aria-label="увеличения"></button>
                     </div>
                     </div>
                   </div>
                 </fieldset>
-                <div class="apply-butt">
-                  <button class="apply-button" type="submit">Применить</button>
-                  <button class="button-apply" type="reset">Сбросить</button>
+                <div class="catalog-filter-buttons">
+                  <button class="catalog-filter-submit" type="submit">Применить</button>
+                  <button class="catalog-filter-reset" type="reset">Сбросить</button>
                 </div>
               </form>
               </section>
